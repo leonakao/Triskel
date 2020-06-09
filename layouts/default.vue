@@ -5,7 +5,7 @@
       :clipped-left="clipped"
       fixed
       app
-      height=100px
+      height=90px
       color=white
 
     >
@@ -13,7 +13,7 @@
         <v-img
           src="Imagens/logo.png"
           contain
-          max-height=100px
+          max-height=90px
           max-width=250px
           position="left">
         </v-img>
