@@ -111,38 +111,59 @@
       <v-divider />
     </v-footer >
     <v-footer
-      id="footer_dados"
+      id="footer"
       min-height=27px
     >
-      <v-img
-        src="Imagens/endereco.png"
-        contain
-        max-height=100px
-        max-width=250px>
-      </v-img>
-      <v-img
-        src="Imagens/contato.png"
-        contain
-        max-height=100px
-        max-width=250px>
-      </v-img>
-      <div id="footer_redes"
-        min-height=40px
-        min-width=100px
-      >
-        <v-img
-          src="Imagens/Linkedin.png"
-          contain
-          max-height=41px
-          max-width=41px>
-        </v-img>
-        <v-img
-          src="Imagens/Instagram.png"
-          contain
-          max-height=41px
-          max-width=41px>
-        </v-img>
-      </div>
+      <v-container id="flooter">
+        <v-row no-gutters>
+          <v-col>
+            <v-img
+              src="Imagens\endereco.png"
+              max-height="102px"
+              max-width="196px"
+            >
+            </v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="Imagens\contato.png"
+              max-height="84px"
+              max-width="275px"
+            >
+            </v-img>
+          </v-col>
+          <v-col>
+            <v-row justify="center">
+              <v-col>
+                <v-img
+                  src="Imagens\Linkedin.png"
+                  max-height="41px"
+                  max-width="41px"
+                >
+                </v-img>
+              </v-col>
+              <v-col>
+                <v-img
+                  src="Imagens\Instagram.png"
+                  max-height="41px"
+                  max-width="41px"
+                >
+                </v-img>
+              </v-col>
+            </v-row>
+            <v-row justify="center">
+              <h3>Developed by .</h3>
+              <v-img
+                src="Imagens\meu-logo.png"
+                max-height="30"
+                max-width="30"
+              >
+              </v-img>
+            </v-row>
+          </v-col>
+        </v-row>
+      </v-container>
+
     </v-footer>
     <!-- Fim rodapé -->
   </v-app>
@@ -178,16 +199,6 @@ export default {
 <style scoped>
   #footer{
     background-color: #f2f2f2ff;
-  }
-  #footer_dados{
-    background-color: #f2f2f2ff;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  #footer_redes{
-    background-color: #f2f2f2ff;
-    margin-left:auto;
-    margin-right:auto;
   }
 
   #pag_actual{
