@@ -9,13 +9,15 @@
       color=white
 
     >
-      <v-img
-        src="Imagens/logo.png"
-        contain
-        max-height=100px
-        max-width=250px
-        position="left">
-      </v-img>
+      <a href="http://triskeleletrificacao.com.br/">
+        <v-img
+          src="Imagens/logo.png"
+          contain
+          max-height=100px
+          max-width=250px
+          position="left">
+        </v-img>
+      </a>
 
       <v-divider dark ></v-divider>
 
@@ -26,28 +28,44 @@
         <v-divider vertical></v-divider>
 
         <!-- Botão inicio -->
-        <v-btn text>
+        <v-btn
+          text
+          to="/"
+          active-class="router-active-class"
+        >
           Inicio
         </v-btn>
 
         <v-divider vertical></v-divider>
 
         <!-- Botão Produtos -->
-        <v-btn text>
+        <v-btn
+          text
+          to="produtos"
+          active-class="router-active-class"
+        >
           Produtos
         </v-btn>
 
         <v-divider vertical></v-divider>
 
         <!-- Botão Sobre -->
-        <v-btn text>
+        <v-btn
+          text
+          to="sobre"
+          active-class="router-active-class"
+        >
           Sobre
         </v-btn>
 
         <v-divider vertical></v-divider>
 
         <!-- Botão Contato -->
-        <v-btn text>
+        <v-btn
+          text
+          to="contato"
+          active-class="router-active-class"
+        >
           Contato
         </v-btn>
         <v-divider vertical></v-divider>
@@ -64,13 +82,15 @@
 
     <!-- Inicio rodapé -->
     <v-footer id="footer">
-      <v-img
-        src="Imagens/logo.png"
-        contain
-        max-height=100px
-        max-width=250px
-        position="left">
-      </v-img>
+      <a href="http://triskeleletrificacao.com.br/">
+        <v-img
+          src="Imagens/logo.png"
+          contain
+          max-height=100px
+          max-width=250px
+          position="left">
+        </v-img>
+      </a>
 
       <v-spacer />
 
@@ -79,28 +99,40 @@
           <v-divider vertical></v-divider>
 
           <!-- Botão inicio -->
-          <v-btn text>
+          <v-btn
+            text
+            to="/"
+          >
             Inicio
           </v-btn>
 
           <v-divider vertical></v-divider>
 
           <!-- Botão Produtos -->
-          <v-btn text>
+          <v-btn
+            text
+            to="produtos"
+          >
             Produtos
           </v-btn>
 
           <v-divider vertical></v-divider>
 
           <!-- Botão Sobre -->
-          <v-btn text>
+          <v-btn
+            text
+            to="sobre"
+          >
             Sobre
           </v-btn>
 
           <v-divider vertical></v-divider>
 
           <!-- Botão Contato -->
-          <v-btn text>
+          <v-btn
+            text
+            to="contato"
+          >
             Contato
           </v-btn>
           <v-divider vertical></v-divider>
@@ -133,37 +165,50 @@
             </v-img>
           </v-col>
           <v-col>
-            <v-row justify="center">
-              <v-col>
-                <v-img
-                  src="Imagens\Linkedin.png"
-                  max-height="41px"
-                  max-width="41px"
-                >
-                </v-img>
-              </v-col>
-              <v-col>
-                <v-img
-                  src="Imagens\Instagram.png"
-                  max-height="41px"
-                  max-width="41px"
-                >
-                </v-img>
+            <v-row
+              align="center"
+              justify="center"
+            >
+              <v-col
+                align="center"
+                justify="end"
+              >
+                <a href="https://www.linkedin.com/in/triskel-eletrifica%C3%A7%C3%A3o-e-automa%C3%A7%C3%A3o-518a721a6/">
+                  <v-icon
+                    id="icon_footer"
+                    size="50px"
+                  >
+                    mdi mdi-linkedin
+                  </v-icon>
+                </a>
+                <a href="https://www.instagram.com/triskeleletrificacao/">
+                  <v-icon
+                    id="icon_footer"
+                    size="50px"
+                  >
+                    mdi mdi-instagram
+                  </v-icon>
+                </a>
               </v-col>
             </v-row>
-            <v-row justify="center">
+            <v-row
+              align="start"
+              justify="center"
+            >
               <h3>Developed by .</h3>
+              <a href="https://vpuchille.dev">
               <v-img
                 src="Imagens\meu-logo.png"
                 max-height="30"
                 max-width="30"
+                to="vpuchille.dev"
               >
               </v-img>
+              </a>
             </v-row>
           </v-col>
         </v-row>
       </v-container>
-
     </v-footer>
     <!-- Fim rodapé -->
   </v-app>
@@ -205,5 +250,13 @@ export default {
     background-color: #a91d21ff;
   }
 
+  #icon_footer{
+    color:#a91d21ff;
+  }
+
+  .router-active-class{
+    background-color: #a91d21ff;
+    color: white;
+  }
 
 </style>
