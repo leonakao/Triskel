@@ -1,5 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
+require("dotenv").config();
+
 export default {
   mode: 'universal',
   /*
@@ -41,6 +43,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+      "@nuxtjs/dotenv"
   ],
   /*
   ** vuetify module configuration
@@ -63,7 +66,7 @@ export default {
     }
   },
   server: {
-    port: 3000, // default: 3000
-    host: "192.168.15.40" // default: localhost
+    port: process.env.VUE_APP_PORT || 3000,
+    host: process.env.VUE_APP_HOST || "localhost"
 }
 }
