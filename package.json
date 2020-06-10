@@ -1,12 +1,12 @@
 {
-  "name": "Triskel",
+  "name": "triskel",
   "version": "1.0.0",
   "private": true,
   "description": "Eletrificação e Automação",
   "author": "Vinicius Puchille",
   "scripts": {
     "build": "nuxt build",
-    "lint": "vue-cli-service lint",
+    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
     "generate": "nuxt generate",
     "start": "nuxt start"
