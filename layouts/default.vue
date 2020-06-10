@@ -19,9 +19,7 @@
         </v-img>
       </a>
 
-      <v-divider dark ></v-divider>
-
-      <v-toolbar-title v-text="title" />
+      <v-spacer />
 
       <v-toolbar-items>
 

@@ -6,7 +6,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: "Triskel",
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
@@ -61,5 +61,9 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  server: {
+    port: 3000, // default: 3000
+    host: "192.168.15.40" // default: localhost
+}
 }
