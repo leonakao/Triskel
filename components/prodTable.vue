@@ -4,6 +4,7 @@
       <v-col
         v-for="(prod, n) in prods"
         :key="n"
+        cols="1.5"
       >
         <v-img
           :src="'Imagens/Produtos/'+prod.imagem+'.png'"

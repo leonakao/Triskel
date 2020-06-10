@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div> <!-- Rooter Element -->
    <!-- Carrossel -->
 
     <v-carousel
@@ -109,29 +109,67 @@
 
     <!-- Endereço -->
     <v-container id="map_area">
-      <div id="map_text">
-        <v-row>
+      <v-row no-gutters>
+        <v-col
+          id="map_text"
+          cols="4"
+        >
           <v-row
             class="d-flex flex-column align-center"
           >
-            <h2>Endereço</h2>
-            <barra />
+            <v-col
+              class="d-flex flex-column align-center"
+            >
+              <h2>Endereço</h2>
+              <barra />
+            </v-col>
+            <v-col>
+              <h4 align="center">
+                Est. Portão Honda, 3305  <br>
+                Jardim Revista  <br>
+                Suzano - SP
+              </h4>
+            </v-col>
           </v-row>
+
+          <v-divider />
+
           <v-row
             class="d-flex flex-column align-center"
           >
-            <h3>
-              Est. Portão Honda, 3305  <br>
-              Jardim Revista  <br>
-              Suzano - SP
-            </h3>
+            <v-col
+              class="d-flex flex-column align-center"
+            >
+              <h2>Contato</h2>
+              <barra />
+            </v-col>
+            <v-col>
+              <h4
+                align="center"
+              >
+                (11) 9 7709-5384<br>
+                vendas@triskeleletrificacao.com.br
+              </h4>
+            </v-col>
           </v-row>
-        </v-row>
-      </div>
-      <div id="map_map">
-        <div id="map_map_left">
-        </div>
-      </div>
+        </v-col>
+
+        <v-col cols="8">
+          <div id="map_map_left"></div>
+          <div id="map_map_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6894775971746!2d-46.282636584878766!3d-23.507691665497955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce79843d77f147%3A0x3234e2dca8bb2c74!2sEstr.%20Port%C3%A3o%20do%20Ronda%2C%203305%20-%20Jardim%20Europa%2C%20Suzano%20-%20SP%2C%2008696-043!5e0!3m2!1spt-BR!2sbr!4v1591809127611!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
 
   </div>
@@ -249,6 +287,23 @@
   }
 
   /* ---- Mapa ---- */
+  #map_area {
+    background-color: white;
+  }
 
+  #map_text {
+    width: 40px;
+  }
+
+  #map_map_left {
+    background-color: #a91d21ff;
+    width: 10px;
+    height: 452px;
+  }
+
+  #map_map_map {
+    width: 602px;
+    height: 452px;
+  }
 
 </style>
