@@ -78,9 +78,32 @@
         id="titulo_prod"
         align="center"
       >Produtos</p>
-      <v-prodTable />
+      <prodTable />
     </v-container>
 
+    <!-- Quem Somos -->
+    <v-container
+      id="quem_area"
+    >
+      <v-row
+        align="start"
+        justify="center"
+      >
+        <p id="quem_titulo">Quem Somos</p>
+        <barra tamanho="40" />
+      </v-row>
+      <v-row>
+        <p id="quem_texto">Com uma equipe que soma mais de 30 anos de experiência no mercado de
+          montagem de painéis, fundada em 2015, a Triskel nasceu para
+          acompanhar a evolução social e tecnológica em ressonância com a mutabilidade
+          constante das necessidades do mercado, desenvolvendo uma metodologia de trabalho
+          que prima, por meio de seu atendimento personalizado, pela confiança e parceria com
+          os clientes, bem como pelo foco nos resultados e maximização dos recursos, criando e
+          desenvolvendo soluções cada vez mais simplificadas e adequadas às necessidades dos
+          nossos clientes.
+        </p>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -88,6 +111,7 @@
 
   import btnBox from "~/components/btnBox.vue";
   import prodTable from "~/components/prodTable.vue";
+  import barra from "~/components/barra.vue";
 
   export default {
     data () {
@@ -115,7 +139,9 @@
       }
     },
     components: {
-      btnBox
+      btnBox,
+      prodTable,
+      barra,
     }
   }
 </script>
@@ -177,6 +203,20 @@
   #titulo_prod{
     font-size: 25pt;
     color: #a91d21ff;
+  }
+
+  /* ---- Quem Somos ---- */
+  #quem_area{
+    background-color: #f2f2f2ff;
+    color: black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+  }
+
+  #quem_titulo{
+    font-size: 25pt;
+    font: bold;
   }
 
 </style>

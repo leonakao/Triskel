@@ -8,7 +8,11 @@
         <v-img
           :src="'Imagens/Produtos/'+prod.imagem+'.png'"
         />
-        <p>{{prod.nome}}</p>
+
+        <p
+          id="texto"
+          align="center"
+        >{{prod.nome}}</p>
 
       </v-col>
     </v-row>
@@ -24,19 +28,19 @@
         prods: [
           {
             imagem: 'Painel_de_distribuicao',
-            nome:'Painéis de distribuição',
+            nome:'Painéis de Distribuição',
           },
           {
             imagem: 'QBGT',
-            nome: 'Paineis gerais \"QGBT\"',
+            nome: 'Paineis Gerais \"QGBT\"',
           },
           {
             imagem: 'Banco_de_capacitores',
-            nome: 'Banco automático de capacitores',
+            nome: 'Banco Automático de Capacitores',
           },
           {
             imagem: 'CCM',
-            nome: 'Centro de controle de motores \"CCM\"'
+            nome: 'Centro de Controle de Motores \"CCM\"'
           },
           {
             imagem: 'CLP',
@@ -44,7 +48,7 @@
           },
           {
             imagem: 'OEM',
-            nome: 'Soluções desenvolvidas para favricantes de equipamentos'
+            nome: 'Soluções Desenvolvidas Para Fabricantes de Equipamentos'
           },
           {
             imagem: 'Central_de_medicao',
@@ -57,5 +61,8 @@
 </script>
 
 <style scoped>
+  #texto{
 
+    color: black;
+  }
 </style>
