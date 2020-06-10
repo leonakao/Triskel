@@ -1,17 +1,16 @@
 <template>
-  <div id="barra">
-  </div>
+    <div id="barra" />
 </template>
 
 <script>
 export default {
-  props: {
-      tamanho: {
-        type: String,
-        default:"",
-      }
+    props: {
+        tamanho: {
+            type: String,
+            default:"",
+        }
     }
-}
+};
 </script>
 
 <style scoped>

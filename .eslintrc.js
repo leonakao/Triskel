@@ -8,8 +8,7 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended',
+    'eslint:recommended',
     "plugin:vue/recommended"
   ],
   // required to lint *.vue files
