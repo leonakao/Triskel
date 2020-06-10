@@ -1,8 +1,5 @@
 <template>
-  <div
-    id="barra"
-    :width="tamanho"
-  >
+  <div id="barra">
   </div>
 </template>
 
@@ -11,7 +8,7 @@ export default {
   props: {
       tamanho: {
         type: String,
-        default:"5",
+        default:"",
       }
     }
 }
@@ -21,7 +18,10 @@ export default {
   #barra{
     color: #a91d21ff;
     background-color: #a91d21ff;
-    height: 10px;
+    height: 8px;
+    width: 200px;
+    box-shadow: 10px 8px 10px #888888;
+    margin-bottom: 15px;
   }
 </style>
 

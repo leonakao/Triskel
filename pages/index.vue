@@ -86,14 +86,16 @@
       id="quem_area"
     >
       <v-row
-        align="start"
-        justify="center"
+        class="d-flex flex-column align-center"
       >
-        <p id="quem_titulo">Quem Somos</p>
-        <barra tamanho="40" />
+        <h2 id="quem_titulo">Quem Somos</h2>
+
+        <barra />
+
       </v-row>
       <v-row>
-        <p id="quem_texto">Com uma equipe que soma mais de 30 anos de experiência no mercado de
+        <p class="text-justify text-sm-center">
+          Com uma equipe que soma mais de 30 anos de experiência no mercado de
           montagem de painéis, fundada em 2015, a Triskel nasceu para
           acompanhar a evolução social e tecnológica em ressonância com a mutabilidade
           constante das necessidades do mercado, desenvolvendo uma metodologia de trabalho
@@ -104,6 +106,34 @@
         </p>
       </v-row>
     </v-container>
+
+    <!-- Endereço -->
+    <v-container id="map_area">
+      <div id="map_text">
+        <v-row>
+          <v-row
+            class="d-flex flex-column align-center"
+          >
+            <h2>Endereço</h2>
+            <barra />
+          </v-row>
+          <v-row
+            class="d-flex flex-column align-center"
+          >
+            <h3>
+              Est. Portão Honda, 3305  <br>
+              Jardim Revista  <br>
+              Suzano - SP
+            </h3>
+          </v-row>
+        </v-row>
+      </div>
+      <div id="map_map">
+        <div id="map_map_left">
+        </div>
+      </div>
+    </v-container>
+
   </div>
 </template>
 
@@ -148,22 +178,22 @@
 
 <style scoped>
   /* ---- style carrossel ---- */
-  #slide{
+  #slide {
     margin-bottom: 0px;
   }
 
-  #slide-box{
+  #slide-box {
     padding-top: 5%;
     padding-left: 10%;
   }
 
-  #slide-left-bar{
+  #slide-left-bar {
     background-color: #a91d21ff;
     width: 12px;
     height: 350px;
   }
 
-  #slide-text-area{
+  #slide-text-area {
     background-color: #000000c7;
     width: 710px;
     height: 350px;
@@ -171,52 +201,54 @@
     padding-top: 1%;
   }
 
-  #slide-text-welcome{
+  #slide-text-welcome {
     color: #ff0000ff;
     font-size: 18pt;
     font:bold;
   }
 
-  #slide-text-title{
+  #slide-text-title {
     color:white;
     font:bold;
     font-size: 26pt;
   }
 
-  #slide-text-text{
+  #slide-text-text {
     color:white;
     font-size: 14pt;
   }
 
-  #slide-text-btn{
+  #slide-text-btn {
     margin-top: 20px;
     background-color:#a91d21ff;
     color:white;
   }
 
   /* ---- Botões ---- */
-  #botoes{
+  #botoes {
     margin-top: -100px;
   }
 
   /* ---- Produtos ---- */
-  #titulo_prod{
+  #titulo_prod {
     font-size: 25pt;
     color: #a91d21ff;
   }
 
   /* ---- Quem Somos ---- */
-  #quem_area{
+  #quem_area {
     background-color: #f2f2f2ff;
     color: black;
     padding-left: 10%;
     padding-right: 10%;
-    text-align: justify;
+    text-align: center;
   }
 
-  #quem_titulo{
-    font-size: 25pt;
-    font: bold;
+  #quem_titulo {
+    font-size: 20pt;
   }
+
+  /* ---- Mapa ---- */
+
 
 </style>
