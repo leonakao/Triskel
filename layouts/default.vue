@@ -122,9 +122,10 @@
                     align="center"
                     justify="center"
                 >
-                    <h3>Developed by .</h3>
+                    <h3>Desenvolvido por </h3>
                     <a href="https://vpuchille.dev">
                         <v-img
+                            class="ml-3"
                             src="Imagens\meu-logo.png"
                             max-height="30"
                             max-width="30"

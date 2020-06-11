@@ -41,7 +41,6 @@
             </v-carousel-item>
         </v-carousel>
 
-
         <!-- Botões -->
         <v-container>
             <v-row
@@ -119,7 +118,9 @@
         </v-container>
 
         <!-- Endereço -->
-        <v-container id="map_area">
+        <v-container
+            id="map_area"
+        >
             <v-row>
                 <v-col
                     id="map_text"
@@ -228,7 +229,7 @@ export default {
 </script>
 
 <style scoped>
-  /* ---- style carrossel ---- */
+  /* ---- Carrossel ---- */
   #slide {
     margin-bottom: 0px;
   }
@@ -304,21 +305,10 @@ export default {
     background-color: white;
   }
 
-  #map_text {
-    min-width: 40px;
-  }
-
-  #map_map_left {
-    background-color: #a91d21ff;
-    width:0;
-    height: 100%;
-  }
-
   #map_map_map {
     height: 100%;
     border-left: 10px solid;
     color: #a91d21ff;
-    padding-left: 10px;
   }
 
 </style>
