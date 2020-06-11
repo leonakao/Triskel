@@ -4,16 +4,20 @@
             :id="cor"
             :href="caminho"
             raised
+            :height="tamanho"
         >
             <v-card-title>
                 <v-icon
                     :id="cor+'_icon'"
-                    size="50px"
+                    size="200%"
                 >
                     {{ icone }}
                 </v-icon>
 
-                <span id="titulo">{{ titulo }}</span>
+                <span
+                    id="titulo"
+                    class="pl-2"
+                >{{ titulo }}</span>
             </v-card-title>
             <v-card-text :id="cor">
                 {{ texto }}
@@ -44,7 +48,7 @@ export default {
         caminho: {
             type: String,
             default:"",
-        }
+        },
     }
 };
 </script>
@@ -57,11 +61,6 @@ export default {
 
   #w_icon {
     color:#a91d21ff;
-  }
-
-  #titulo {
-    font-size: 20pt;
-    padding-left: 10px;
   }
 
   #r {

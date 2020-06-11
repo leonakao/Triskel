@@ -19,7 +19,7 @@
 
         <!-- Quem somos -->
         <v-container>
-            <v-row>
+            <v-row class="align-center">
                 <v-col
                     cols="6"
                     class="align-center"
@@ -157,6 +157,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
     /* ---- Geral ---- */
     #c {
@@ -179,6 +180,5 @@ export default {
         padding-left: 8px;
         margin-left: 10px;
     }
-    /* ---- Parceiros ---- */
 
 </style>

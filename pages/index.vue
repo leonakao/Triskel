@@ -6,7 +6,7 @@
         <v-carousel
             id="carrossel"
             cycle
-            height="550px"
+            height="500px"
             hide-delimiters
             show-arrows-on-hover
         >
@@ -15,16 +15,22 @@
                 :key="i"
                 :src="slide.img"
             >
-                <v-container>
-                    <v-row id="slide-box">
-                        <div id="slide-left-bar" />
-                        <div id="slide-text-area">
-                            <p id="slide-text-welcome">
+                <v-container
+                    class="pa-10 ma-10 pl-12 ml-12"
+                >
+                    <v-row
+                        id="slide-box"
+                    >
+                        <div
+                            id="slide-text-area"
+                            class="pa-4"
+                        >
+                            <h3 id="slide-text-welcome">
                                 Bem vindo a Triskel!
-                            </p>
-                            <p id="slide-text-title">
+                            </h3>
+                            <h2 id="slide-text-title">
                                 {{ slide.title }}
-                            </p>
+                            </h2>
                             <p id="slide-text-text">
                                 Paineis elétricos de qualidade e com uma equipe de pós vendas qualificada e responsiva
                             </p>
@@ -157,12 +163,10 @@
                             <barra />
                         </v-col>
                         <v-col>
-                            <h4
-                                align="center"
-                            >
+                            <div align="center">
                                 (11) 9 7709-5384<br>
                                 vendas@triskeleletrificacao.com.br
-                            </h4>
+                            </div>
                         </v-col>
                     </v-row>
                 </v-col>
@@ -235,28 +239,17 @@ export default {
   }
 
   #slide-box {
-    padding-top: 5%;
-    padding-left: 10%;
-  }
-
-  #slide-left-bar {
-    background-color: #a91d21ff;
-    width: 12px;
-    height: 350px;
+    border-left: 10px solid #a91d21ff;
   }
 
   #slide-text-area {
     background-color: #000000c7;
-    width: 710px;
-    height: 350px;
-    padding-left: 2%;
-    padding-top: 1%;
+    width: 70%;
+    height: 100%;
   }
 
   #slide-text-welcome {
     color: #ff0000ff;
-    font-size: 18pt;
-    font:bold;
   }
 
   #slide-text-title {
@@ -271,7 +264,7 @@ export default {
   }
 
   #slide-text-btn {
-    margin-top: 20px;
+    margin-top: 1%;
     background-color:#a91d21ff;
     color:white;
   }

@@ -18,7 +18,7 @@ export default {
     color: #a91d21ff;
     background-color: #a91d21ff;
     height: 8px;
-    width: 200px;
+    width: 55%;
     box-shadow: 10px 8px 10px #888888;
     margin-bottom: 15px;
   }

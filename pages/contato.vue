@@ -34,7 +34,7 @@
                         cor="w"
                         icone="mdi mdi-email"
                         titulo="E-mail"
-                        texto="vendas@triskeleletrificacao.com.br"
+                        texto="Entre em contato: vendas@triskeleletrificacao.com.br"
                     />
                 </v-col>
                 <v-col>
