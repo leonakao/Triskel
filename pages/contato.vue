@@ -59,12 +59,7 @@
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-            >
-                <v-card>
-                <v-card-title id="c">Fale conosco</v-card-title>
-
-                </v-card>
-            </iframe>
+            />
         </v-container>
     </div>
 </template>
