@@ -76,67 +76,71 @@
         </v-container>
 
         <!-- Missão -->
-        <v-container>
-            <v-row
-                class="d-flex flex-column align-center"
-            >
-                <h1 id="c_titulo">
-                    Missão
-                </h1>
-
-                <barra />
-            </v-row>
+        <v-container class="mt-1">
             <v-row>
-                <p class="text-justify text-sm-center">
-                    Atender nossos clientes com criatividade, segurança e eficiência
-                    no alcance de seus objetivos, consolidando parceria e confiança mútuos. Aprimorar e
-                    compartilhar constantemente o conhecimento, fornecendo painéis elétricos de baixa
-                    tensão para todo o Mundo, satisfazendo as mais peculiares necessidades do mercado
-                    com tecnologia de alta qualidade, processos enxutos e pessoas qualificadas.
-                </p>
-            </v-row>
-        </v-container>
+                <v-col>
+                    <v-row
+                        class="d-flex flex-column align-center"
+                    >
+                        <h1 id="c_titulo">
+                            Missão
+                        </h1>
 
-        <!-- Visão -->
-        <v-container id="c">
-            <v-row
-                class="d-flex flex-column align-center"
-            >
-                <h1>
-                    Visão
-                </h1>
+                        <barra />
+                    </v-row>
+                    <v-row>
+                        <p class="text-justify pl-4 pr-4">
+                            Atender nossos clientes com criatividade, segurança e eficiência
+                            no alcance de seus objetivos, consolidando parceria e confiança mútuos. Aprimorar e
+                            compartilhar constantemente o conhecimento, fornecendo painéis elétricos de baixa
+                            tensão para todo o Mundo, satisfazendo as mais peculiares necessidades do mercado
+                            com tecnologia de alta qualidade, processos enxutos e pessoas qualificadas.
+                        </p>
+                    </v-row>
+                </v-col>
 
-                <barra />
-            </v-row>
-            <v-row>
-                <p class="text-justify text-sm-center">
-                    Ser reconhecida como uma das melhores empresas do Mundo,
-                    tornando-se referência na fabricação de painéis elétricos. Contribuir para o
-                    desenvolvimento sustentável do planeta para o futuro da humanidade, transmitindo
-                    valores, concretizando ideias e sonhos.
-                </p>
-            </v-row>
-        </v-container>
+                <!-- Visão -->
+                <v-col id="c">
+                    <v-row
+                        class="d-flex flex-column align-center"
+                    >
+                        <h1>
+                            Visão
+                        </h1>
 
-        <!-- Valores -->
-        <v-container>
-            <v-row
-                class="d-flex flex-column align-center"
-            >
-                <h1 id="c_titulo">
-                    Valores
-                </h1>
+                        <barra />
+                    </v-row>
+                    <v-row>
+                        <p class="text-justify pl-4 pr-4">
+                            Ser reconhecida como uma das melhores empresas do Mundo,
+                            tornando-se referência na fabricação de painéis elétricos. Contribuir para o
+                            desenvolvimento sustentável do planeta para o futuro da humanidade, transmitindo
+                            valores, concretizando ideias e sonhos.
+                        </p>
+                    </v-row>
+                </v-col>
 
-                <barra />
-            </v-row>
-            <v-row>
-                <p class="text-justify text-sm-center">
-                    Acreditamos no aperfeiçoamento da sociedade através do
-                    compromisso com a ética, responsabilidade, dedicação e transparência. Valorizamos as
-                    pessoas, o trabalho em equipe e a solidariedade, criando um ambiente saudável para o
-                    desenvolvimento pleno das potencialidades e realização pessoal dos nossos
-                    colaboradores.
-                </p>
+                <!-- Valores -->
+                <v-col>
+                    <v-row
+                        class="d-flex flex-column align-center"
+                    >
+                        <h1 id="c_titulo">
+                            Valores
+                        </h1>
+
+                        <barra />
+                    </v-row>
+                    <v-row>
+                        <p class="text-justify pl-4 pr-4">
+                            Acreditamos no aperfeiçoamento da sociedade através do
+                            compromisso com a ética, responsabilidade, dedicação e transparência. Valorizamos as
+                            pessoas, o trabalho em equipe e a solidariedade, criando um ambiente saudável para o
+                            desenvolvimento pleno das potencialidades e realização pessoal dos nossos
+                            colaboradores.
+                        </p>
+                    </v-row>
+                </v-col>
             </v-row>
         </v-container>
     </div>
