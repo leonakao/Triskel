@@ -4,7 +4,6 @@
             :id="cor"
             :href="caminho"
             raised
-            :height="tamanho"
         >
             <v-card-title>
                 <v-icon
