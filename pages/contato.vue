@@ -42,8 +42,8 @@
                         cor="r"
                         icone="mdi mdi-whatsapp"
                         titulo="Whatsapp"
-                        texto="Fale diretamente conosco: (14) 97709-5384"
-                        caminho="https://api.whatsapp.com/send?phone=5514977095384&text=Olá"
+                        texto="Fale diretamente conosco: (11) 97709-5384"
+                        caminho="https://api.whatsapp.com/send?phone=5511977095384&text=Olá"
                     />
                 </v-col>
             </v-row>
