@@ -1,5 +1,8 @@
 <template>
-    <div id="barra" />
+    <div
+        id="barra"
+        class="elevation-4"
+    />
 </template>
 
 <script>
@@ -20,7 +23,7 @@ export default {
     height: 8px;
     width: 55%;
     box-shadow: 10px 8px 10px #888888;
-    margin-bottom: 15px;
+    margin-bottom: 1%;
   }
 </style>
 

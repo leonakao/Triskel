@@ -177,8 +177,8 @@ export default {
     #quem_titulo {
         color: #a91d21ff;
         border-left: 10px solid;
-        padding-left: 8px;
-        margin-left: 10px;
+        padding-left: 1%;
+        margin-left: 3%;
     }
 
 </style>

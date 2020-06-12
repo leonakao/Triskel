@@ -4,18 +4,19 @@
             <v-col
                 v-for="(prod, n) in prods"
                 :key="n"
-                width="100%"
+                cols="6"
+                sm="2"
             >
                 <v-img
                     :src="'Imagens/Produtos/'+prod.imagem+'.png'"
                 />
 
-                <p
+                <h3
                     id="texto"
                     align="center"
                 >
                     {{ prod.nome }}
-                </p>
+                </h3>
             </v-col>
         </v-row>
         <v-row />
@@ -63,7 +64,7 @@ export default {
 
 <style scoped>
   #texto{
-
     color: black;
-  }
+    }
 </style>
+

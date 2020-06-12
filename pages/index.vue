@@ -6,7 +6,6 @@
         <v-carousel
             id="carrossel"
             cycle
-            height="500px"
             hide-delimiters
             show-arrows-on-hover
         >
@@ -15,15 +14,13 @@
                 :key="i"
                 :src="slide.img"
             >
-                <v-container
-                    class="pa-10 ma-10 pl-12 ml-12"
-                >
+                <v-container>
                     <v-row
                         id="slide-box"
                     >
-                        <div
+                        <v-col
                             id="slide-text-area"
-                            class="pa-4"
+                            cols="8"
                         >
                             <h3 id="slide-text-welcome">
                                 Bem vindo a Triskel!
@@ -41,7 +38,7 @@
                                 {{ slide.btn_text }}
                                 <v-icon>mdi mdi-arrow-right</v-icon>
                             </v-btn>
-                        </div>
+                        </v-col>
                     </v-row>
                 </v-container>
             </v-carousel-item>
@@ -52,7 +49,10 @@
             <v-row
                 id="botoes"
             >
-                <v-col>
+                <v-col
+                    cols="12"
+                    sm="4"
+                >
                     <btnBox
                         cor="r"
                         icone="mdi mdi-instagram"
@@ -61,7 +61,10 @@
                         caminho="https://www.instagram.com/triskeleletrificacao/"
                     />
                 </v-col>
-                <v-col>
+                <v-col
+                    cols="12"
+                    sm="4"
+                >
                     <btnBox
                         cor="w"
                         icone="mdi mdi-linkedin"
@@ -70,13 +73,16 @@
                         caminho="https://www.linkedin.com/in/triskel-eletrifica%C3%A7%C3%A3o-e-automa%C3%A7%C3%A3o-518a721a6/"
                     />
                 </v-col>
-                <v-col>
+                <v-col
+                    cols="12"
+                    sm="4"
+                >
                     <btnBox
                         cor="r"
                         icone="mdi mdi-whatsapp"
                         titulo="Whatsapp"
-                        texto="Fale diretamente conosco: (14) 97709-5384"
-                        caminho="https://api.whatsapp.com/send?phone=5514977095384&text=Olá"
+                        texto="Fale diretamente conosco: (11) 97709-5384"
+                        caminho="https://api.whatsapp.com/send?phone=5511977095384&text=Olá"
                     />
                 </v-col>
             </v-row>
@@ -87,12 +93,12 @@
             align="start"
             justify="center"
         >
-            <p
+            <h1
                 id="titulo_prod"
                 align="center"
             >
                 Produtos
-            </p>
+            </h1>
             <prodTable />
         </v-container>
 
@@ -240,12 +246,13 @@ export default {
 
   #slide-box {
     border-left: 10px solid #a91d21ff;
+    margin-left: 10%;
+    margin-top: 5%;
   }
 
   #slide-text-area {
     background-color: #000000c7;
-    width: 70%;
-    height: 100%;
+    padding-left: 2%;
   }
 
   #slide-text-welcome {
@@ -255,12 +262,12 @@ export default {
   #slide-text-title {
     color:white;
     font:bold;
-    font-size: 26pt;
+    font-size: 200%;
   }
 
   #slide-text-text {
     color:white;
-    font-size: 14pt;
+    font-size: 125%;
   }
 
   #slide-text-btn {
@@ -276,7 +283,6 @@ export default {
 
   /* ---- Produtos ---- */
   #titulo_prod {
-    font-size: 25pt;
     color: #a91d21ff;
   }
 
@@ -287,6 +293,7 @@ export default {
     padding-left: 10%;
     padding-right: 10%;
     text-align: center;
+    line-height: 200%;
   }
 
   #quem_titulo {
@@ -305,3 +312,12 @@ export default {
   }
 
 </style>
+
+<!-- Recomendações amanda
+- Aumentar a letra do quem somos
+- Aumentar o espaçamento entre as partes do site
+- Colocar line-height no quem somos
+- Usar Bootstrap
+ -
+
+-->
