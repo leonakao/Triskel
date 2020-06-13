@@ -1,6 +1,6 @@
 <template>
     <v-app>
-        <!-- ################ Menu topo ############### -->
+        <!-- Menu topo -->
         <v-app-bar
             :clipped-left="clipped"
             fixed
@@ -20,7 +20,7 @@
 
             <v-spacer />
 
-            <v-toolbar-items>
+            <v-toolbar-items v-if="$vuetify.breakpoint.smAndUp">
                 <v-divider vertical />
 
                 <!-- Botão inicio -->
@@ -66,7 +66,44 @@
                 </v-btn>
                 <v-divider vertical />
             </v-toolbar-items>
+            <v-app-bar-nav-icon
+                v-else
+                @click="drawer = true"
+            />
         </v-app-bar>
+
+        <v-navigation-drawer
+            v-model="drawer"
+            right
+            mini-variant
+            mini-variant-width="150"
+            app
+        >
+            <v-list
+                dense
+                rounded
+                class="py-0"
+            >
+                <v-list-item class="d-flex justify-center">
+                    <v-img src="Imagens/logo.png" />
+                </v-list-item>
+
+                <v-divider />
+
+                <v-list-item
+                    v-for="({text, to}, i) in options"
+                    :key="i"
+                    link
+                    :to="to"
+                    active-class="router-active-class"
+                >
+                    <v-list-item-content class="text-center">
+                        <v-list-item-title>{{ text }}</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list>
+        </v-navigation-drawer>
+
         <!-- Fim menu topo -->
 
         <v-content>
@@ -116,13 +153,13 @@
                     justify="center"
                 >
                     <v-icon> mdi mdi-copyright</v-icon>
-                    <h3>2020</h3>
+                    <h4>2020</h4>
                 </v-row>
                 <v-row
                     align="center"
                     justify="center"
                 >
-                    <h3>Desenvolvido por </h3>
+                    <h4>Desenvolvido por </h4>
                     <a href="https://vpuchille.dev">
                         <v-img
                             class="ml-3"
@@ -144,25 +181,32 @@ export default {
     data () {
         return {
             clipped: false,
-            drawer: false,
             fixed: false,
-            items: [
+            options: [
                 {
-                    icon: "mdi-apps",
-                    title: "Welcome",
-                    to: "/"
+                    to: "/",
+                    text: "Início"
                 },
                 {
-                    icon: "mdi-chart-bubble",
-                    title: "Inspire",
-                    to: "/inspire"
+                    to: "produtos",
+                    text: "Produtos"
+                },
+                {
+                    to: "sobre",
+                    text: "Sobre"
+                },
+                {
+                    to: "contato",
+                    text: "Contato"
                 }
             ],
-            miniVariant: false,
-            right: true,
-            rightDrawer: false,
         };
-    }
+    },
+    created () {
+
+        this.drawer = this.$vuetify.breakpoint.xsOnly ? null : false;
+
+    },
 };
 </script>
 

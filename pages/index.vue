@@ -4,7 +4,6 @@
         <!-- Carrossel -->
 
         <v-carousel
-            id="carrossel"
             cycle
             hide-delimiters
             show-arrows-on-hover
@@ -20,7 +19,8 @@
                     >
                         <v-col
                             id="slide-text-area"
-                            cols="8"
+                            sm="8"
+                            cols="12"
                         >
                             <h3 id="slide-text-welcome">
                                 Bem vindo a Triskel!
@@ -240,10 +240,6 @@ export default {
 
 <style scoped>
   /* ---- Carrossel ---- */
-  #slide {
-    margin-bottom: 0px;
-  }
-
   #slide-box {
     border-left: 10px solid #a91d21ff;
     margin-left: 10%;
@@ -314,10 +310,7 @@ export default {
 </style>
 
 <!-- Recomendações amanda
-- Aumentar a letra do quem somos
 - Aumentar o espaçamento entre as partes do site
-- Colocar line-height no quem somos
-- Usar Bootstrap
- -
+- Aplicar grid em tudo
 
 -->
