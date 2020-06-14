@@ -1,22 +1,22 @@
 <template>
     <v-container>
-        <v-row>
+        <v-row class="align-center justify-center text-center">
             <v-col
                 v-for="(prod, n) in prods"
                 :key="n"
                 cols="6"
-                sm="2"
+                sm="3"
             >
                 <v-img
                     :src="'Imagens/Produtos/'+prod.imagem+'.png'"
                 />
 
-                <h3
+                <h4
                     id="texto"
                     align="center"
                 >
                     {{ prod.nome }}
-                </h3>
+                </h4>
             </v-col>
         </v-row>
         <v-row />

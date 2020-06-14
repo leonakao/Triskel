@@ -11,28 +11,6 @@
                 >
                     <btnBox
                         cor="r"
-                        icone="mdi mdi-map-marker"
-                        titulo="Pessoalmente"
-                        texto="Est. Portão Honda, 3305, Jardim Revista, Suzano - SP"
-                    />
-                </v-col>
-                <v-col
-                    cols="12"
-                    sm="4"
-                >
-                    <btnBox
-                        cor="w"
-                        icone="mdi mdi-email"
-                        titulo="E-mail"
-                        texto="Entre em contato: vendas@triskeleletrificacao.com.br"
-                    />
-                </v-col>
-                <v-col
-                    cols="12"
-                    sm="4"
-                >
-                    <btnBox
-                        cor="r"
                         icone="mdi mdi-whatsapp"
                         titulo="Whatsapp"
                         texto="Fale diretamente conosco: (11) 97709-5384"
@@ -44,9 +22,9 @@
                     sm="4"
                 >
                     <btnBox
-                        cor="r"
+                        cor="w"
                         icone="mdi mdi-instagram"
-                        titulo="Produtos"
+                        titulo="Instagram"
                         texto="Nos encontre também nas redes sociais."
                         caminho="https://www.instagram.com/triskeleletrificacao/"
                     />
@@ -56,7 +34,7 @@
                     sm="4"
                 >
                     <btnBox
-                        cor="w"
+                        cor="r"
                         icone="mdi mdi-linkedin"
                         titulo="Linkedin"
                         texto="Nos encontre também nas redes sociais."
@@ -67,7 +45,7 @@
         </v-container>
 
         <!-- Form -->
-        <v-container>
+        <v-container id="c_back">
             <v-row justify="center">
                 <v-col
                     cols="12"
@@ -100,6 +78,7 @@
                                     :rules="nameRules"
                                     label="Nome"
                                     required
+                                    solo
                                 />
 
                                 <v-text-field
@@ -107,6 +86,7 @@
                                     :rules="telefoneRules"
                                     label="Telefone"
                                     required
+                                    solo
                                 />
 
                                 <v-text-field
@@ -114,6 +94,7 @@
                                     :rules="emailRules"
                                     label="E-mail"
                                     required
+                                    solo
                                 />
                             </v-col>
                             <v-col
@@ -127,6 +108,7 @@
                                     required
                                     :rules="mensagemRules"
                                     hint="O que você veio nos contar?"
+                                    solo
                                 />
                                 <v-btn
                                     id="enviar"
@@ -141,6 +123,9 @@
                 </v-col>
             </v-row>
         </v-container>
+
+
+
 
         <!-- Endereço -->
         <v-container
@@ -255,6 +240,10 @@ export default {
     /* ---- Geral ---- */
     #c {
         color: #a91d21ff;
+    }
+
+    #c_back{
+        background-color: #f2f2f2ff;
     }
 
     /* ---- Titulo ---- */

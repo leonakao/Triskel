@@ -55,7 +55,7 @@
                         <v-col
                             id="c"
                             cols="12"
-                            class="mb-2"
+                            class="pb-2"
                         >
                             <v-row
                                 class="d-flex flex-column align-center"
@@ -80,12 +80,12 @@
                         <!-- Visão -->
                         <v-col
                             cols="12"
-                            class="mb-2"
+                            class="pb-2"
                         >
                             <v-row
                                 class="d-flex flex-column align-center "
                             >
-                                <h1>
+                                <h1 id="c_titulo">
                                     Visão
                                 </h1>
 
@@ -105,7 +105,7 @@
                         <v-col
                             id="c"
                             cols="12"
-                            class="mb-2"
+                            class="pb-2"
                         >
                             <v-row
                                 class="d-flex flex-column align-center"
