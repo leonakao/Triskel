@@ -5,17 +5,17 @@
             :clipped-left="clipped"
             fixed
             app
-            height="100%"
+            height="100px"
             color="white"
         >
-            <a href="http://triskeleletrificacao.com.br/">
+            <a
+                href="http://triskeleletrificacao.com.br/"
+                :style="{ height: '80px', 'max-width': '200px'}"
+            >
                 <v-img
                     src="Imagens/logo.png"
                     contain
-                    min-height="90px"
-                    min-width="250px"
-                    max-height="20%"
-                    max-width="20%"
+                    height="100%"
                     position="left"
                 />
             </a>
@@ -182,6 +182,7 @@
 export default {
     data () {
         return {
+            drawer: null,
             clipped: false,
             fixed: false,
             options: [
@@ -205,9 +206,7 @@ export default {
         };
     },
     created () {
-
         this.drawer = this.$vuetify.breakpoint.xsOnly ? null : false;
-
     },
 };
 </script>
