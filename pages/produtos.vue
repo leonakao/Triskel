@@ -1,21 +1,6 @@
 <template>
     <div>
         <!-- Root Element -->
-        <v-container>
-            <v-row>
-                <v-col>
-                    <v-img
-                        src="Imagens/prod.png"
-                        class="align-center text-center"
-                    >
-                        <h1>
-                            Produtos
-                        </h1>
-                    </v-img>
-                </v-col>
-            </v-row>
-        </v-container>
-
         <v-container
             align="start"
             justify="center"

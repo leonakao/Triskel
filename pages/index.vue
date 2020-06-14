@@ -55,10 +55,10 @@
                 >
                     <btnBox
                         cor="r"
-                        icone="mdi mdi-instagram"
-                        titulo="Instagram"
-                        texto="Nos encontre também nas redes sociais."
-                        caminho="https://www.instagram.com/triskeleletrificacao/"
+                        icone="mdi mdi-flash"
+                        titulo="Produtos"
+                        texto="Encontre o melhor produto para seu projeto."
+                        to="produtos"
                     />
                 </v-col>
                 <v-col
@@ -67,10 +67,10 @@
                 >
                     <btnBox
                         cor="w"
-                        icone="mdi mdi-linkedin"
-                        titulo="Linkedin"
-                        texto="Nos encontre também nas redes sociais."
-                        caminho="https://www.linkedin.com/in/triskel-eletrifica%C3%A7%C3%A3o-e-automa%C3%A7%C3%A3o-518a721a6/"
+                        icone="mdi mdi-briefcase"
+                        titulo="Venha nos conhecer"
+                        texto="Conheça seu futuro parceiro nos negócios."
+                        to="sobre"
                     />
                 </v-col>
                 <v-col
@@ -79,120 +79,11 @@
                 >
                     <btnBox
                         cor="r"
-                        icone="mdi mdi-whatsapp"
-                        titulo="Whatsapp"
-                        texto="Fale diretamente conosco: (11) 97709-5384"
-                        caminho="https://api.whatsapp.com/send?phone=5511977095384&text=Olá"
+                        icone="mdi mdi-comment-processing-outline"
+                        titulo="Fale conosco"
+                        texto="Mande-nos seu projeto"
+                        to="contato"
                     />
-                </v-col>
-            </v-row>
-        </v-container>
-
-        <!-- Produtos -->
-        <v-container
-            align="start"
-            justify="center"
-        >
-            <h1
-                id="titulo_prod"
-                align="center"
-            >
-                Produtos
-            </h1>
-            <prodTable />
-        </v-container>
-
-        <!-- Quem Somos -->
-        <v-container
-            id="quem_area"
-        >
-            <v-row
-                class="d-flex flex-column align-center"
-            >
-                <h2 id="quem_titulo">
-                    Quem Somos
-                </h2>
-
-                <barra />
-            </v-row>
-            <v-row>
-                <p class="text-justify text-sm-center">
-                    Com uma equipe que soma mais de 30 anos de experiência no mercado de
-                    montagem de painéis, fundada em 2015, a Triskel nasceu para
-                    acompanhar a evolução social e tecnológica em ressonância com a mutabilidade
-                    constante das necessidades do mercado, desenvolvendo uma metodologia de trabalho
-                    que prima, por meio de seu atendimento personalizado, pela confiança e parceria com
-                    os clientes, bem como pelo foco nos resultados e maximização dos recursos, criando e
-                    desenvolvendo soluções cada vez mais simplificadas e adequadas às necessidades dos
-                    nossos clientes.
-                </p>
-            </v-row>
-        </v-container>
-
-        <!-- Endereço -->
-        <v-container
-            id="map_area"
-        >
-            <v-row>
-                <v-col
-                    id="map_text"
-                    cols="12"
-                    sm="4"
-                >
-                    <v-row
-                        class="d-flex flex-column align-center"
-                    >
-                        <v-col
-                            class="d-flex flex-column align-center"
-                        >
-                            <h2>Endereço</h2>
-                            <barra />
-                        </v-col>
-                        <v-col>
-                            <h4 align="center">
-                                Est. Portão Honda, 3305  <br>
-                                Jardim Revista  <br>
-                                Suzano - SP
-                            </h4>
-                        </v-col>
-                    </v-row>
-
-                    <v-divider />
-
-                    <v-row
-                        class="d-flex flex-column align-center"
-                    >
-                        <v-col
-                            class="d-flex flex-column align-center"
-                        >
-                            <h2>Contato</h2>
-                            <barra />
-                        </v-col>
-                        <v-col>
-                            <div align="center">
-                                (11) 9 7709-5384<br>
-                                vendas@triskeleletrificacao.com.br
-                            </div>
-                        </v-col>
-                    </v-row>
-                </v-col>
-
-                <v-col
-                    cols="12"
-                    sm="8"
-                >
-                    <div id="map_map_map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6894775971746!2d-46.282636584878766!3d-23.507691665497955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce79843d77f147%3A0x3234e2dca8bb2c74!2sEstr.%20Port%C3%A3o%20do%20Ronda%2C%203305%20-%20Jardim%20Europa%2C%20Suzano%20-%20SP%2C%2008696-043!5e0!3m2!1spt-BR!2sbr!4v1591809127611!5m2!1spt-BR!2sbr"
-                            width="100%"
-                            height="100%"
-                            frameborder="0"
-                            style="border:0;"
-                            allowfullscreen=""
-                            aria-hidden="false"
-                            tabindex="0"
-                        />
-                    </div>
                 </v-col>
             </v-row>
         </v-container>
@@ -202,14 +93,10 @@
 <script>
 
 import btnBox from "~/components/btnBox.vue";
-import prodTable from "~/components/prodTable.vue";
-import barra from "~/components/barra.vue";
 
 export default {
     components: {
         btnBox,
-        prodTable,
-        barra,
     },
     data () {
         return {
@@ -275,36 +162,6 @@ export default {
   /* ---- Botões ---- */
   #botoes {
     margin-top: -100px;
-  }
-
-  /* ---- Produtos ---- */
-  #titulo_prod {
-    color: #a91d21ff;
-  }
-
-  /* ---- Quem Somos ---- */
-  #quem_area {
-    background-color: #f2f2f2ff;
-    color: black;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
-    line-height: 200%;
-  }
-
-  #quem_titulo {
-    font-size: 20pt;
-  }
-
-  /* ---- Mapa ---- */
-  #map_area {
-    background-color: white;
-  }
-
-  #map_map_map {
-    height: 100%;
-    border-left: 10px solid;
-    color: #a91d21ff;
   }
 
 </style>

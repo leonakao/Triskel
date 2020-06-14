@@ -5,15 +5,17 @@
             :clipped-left="clipped"
             fixed
             app
-            height="90px"
+            height="100%"
             color="white"
         >
             <a href="http://triskeleletrificacao.com.br/">
                 <v-img
                     src="Imagens/logo.png"
                     contain
-                    max-height="90px"
-                    max-width="250px"
+                    min-height="90px"
+                    min-width="250px"
+                    max-height="20%"
+                    max-width="20%"
                     position="left"
                 />
             </a>

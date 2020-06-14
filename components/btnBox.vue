@@ -3,6 +3,7 @@
         <v-card
             :id="cor"
             :href="caminho"
+            :to="to"
             raised
         >
             <v-card-title>
@@ -13,12 +14,12 @@
                     {{ icone }}
                 </v-icon>
 
-                <span
-                    id="titulo"
-                    class="pl-2"
-                >{{ titulo }}</span>
+                <span class="pl-2 texto">{{ titulo }}</span>
             </v-card-title>
-            <v-card-text :id="cor">
+            <v-card-text
+                :id="cor"
+                class="texto"
+            >
                 {{ texto }}
             </v-card-text>
         </v-card>
@@ -30,15 +31,15 @@ export default {
     props: {
         icone: {
             type: String,
-            default:"",
+            default: "",
         },
         titulo: {
             type: String,
-            default:"",
+            default: "",
         },
         texto: {
             type: String,
-            default:"",
+            default: "",
         },
         cor: {
             type: String,
@@ -46,8 +47,12 @@ export default {
         },
         caminho: {
             type: String,
-            default:"",
+            default: "",
         },
+        to: {
+            type: String,
+            default: ""
+        }
     }
 };
 </script>
@@ -70,5 +75,9 @@ export default {
   #r_icon {
     color:white;
   }
+
+.texto {
+    font-size: 100%;
+}
 
 </style>
